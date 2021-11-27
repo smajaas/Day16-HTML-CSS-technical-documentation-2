@@ -1,0 +1,84 @@
+html {
+  font-family: 'Poppins', sans-serif;
+}
+
+#navbar {
+    position: fixed;
+    min-width: 290px;
+    left: 0;
+    top: 0;
+    width: 300px;
+    height: 100%;
+    border-right: 3px solid #9AA2A2;
+    background-color: lightgray;
+    color: black;
+    
+  }
+
+      #navbar ul {
+    padding: 0; 
+    display: block;
+    overflow-y: auto;/*scroll when overflowing box*/
+    overflow-x: hidden;/*ovfl no show outside of box*/
+  /*   height: 88%; */
+  }
+  #navbar li {
+    padding-left: 20px;
+    position: relative;
+    width: 100%;
+  }
+  #navbar header {
+    padding: 25px; 
+    background-color: yellow;
+    padding: inherit;
+  }
+
+   #nav-list {
+    list-style:disc; /*remove bullets*/
+  }
+  #navbar a {
+    text-decoration: none; /*remove underline*/
+    color: #4D4E53;
+  }
+  #navbar li {
+    padding-bottom: 30px;
+    font-size: 18px;
+    font-weight: bold;
+    border-top: 1px solid black;
+  }
+  #main-doc {
+    position: absolute;
+    margin-left: 310px;
+    margin-bottom: 110px;
+  }
+  
+  p, li {
+    line-height: 1.5;
+  }
+  p, li {
+    font-size: 1.1em;
+    color: #4D4E53;
+  }
+  @media only screen and (max-width: 815px) { 
+     #main-doc {
+      position: relative;
+      margin-left: 0px;
+      margin-top: 290px;
+      padding: 0;
+    }
+    #navbar {
+      position: absolute;
+      top: 0;
+      padding: 0;
+      margin: 0;
+      max-height: 275px;
+      width: 100%;
+      border: none;
+      z-index: 1;
+      border-bottom: 3px solid #9AA2A2;
+    }
+    #navbar ul {
+      border: 1px solid;
+      height: 207px;
+    }
+   }
